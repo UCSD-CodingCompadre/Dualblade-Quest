@@ -24,9 +24,6 @@ void AEnemyAIController::BeginPlay()
 
         // Get the BlackboardComponent
         AIMobBlackBoard = GetBlackboardComponent();
-
-        // Set the start location for the pawn in the BlackboardComponent
-        if(MobPawn != nullptr && AIMobBlackBoard != nullptr) AIMobBlackBoard->SetValueAsVector(TEXT("AIPawnStartLocation"), MobPawn->GetActorLocation());
     }
 }
 
