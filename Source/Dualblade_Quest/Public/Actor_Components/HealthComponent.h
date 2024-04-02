@@ -28,8 +28,8 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	// Hold the max health
-	UPROPERTY()
-	float MaxHealth = 1000.0f;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float MaxHealth = 100.0f;
 
 	// Hold the current health
 	UPROPERTY(BlueprintReadWrite)
